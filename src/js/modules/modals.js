@@ -17,6 +17,13 @@ const modals = () => {
                 if(destroy) {
                     item.remove();
                 }
+
+                windows.forEach(item => {
+                    item.style.display = 'none';
+                    item.classList.add('animated', 'fadeIn');
+                });
+        
+
                 btnPressed = true;
                 modal.style.display = "block";
                 document.body.style.overflow = "hidden";
@@ -25,10 +32,7 @@ const modals = () => {
             });
         });
 
-        windows.forEach(window => {
-            window.style.display = 'none';
-        });
-
+       
         close.addEventListener('click', (e) => {
             windows.forEach(window => {
                 window.style.display = 'none';

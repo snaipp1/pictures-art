@@ -973,14 +973,15 @@ var modals = function modals() {
           item.remove();
         }
 
+        windows.forEach(function (item) {
+          item.style.display = 'none';
+          item.classList.add('animated', 'fadeIn');
+        });
         btnPressed = true;
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
         document.body.style.marginRight = "".concat(scroll, "px");
       });
-    });
-    windows.forEach(function (window) {
-      window.style.display = 'none';
     });
     close.addEventListener('click', function (e) {
       windows.forEach(function (window) {
