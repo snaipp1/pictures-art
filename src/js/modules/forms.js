@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { postData } from "../services/requests";
 
+=======
+>>>>>>> 313f07d9ccb3e88304d6187cd41e6f0442bb6962
 const forms = () => {
     const form = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input'),
@@ -19,6 +22,18 @@ const forms = () => {
         question: 'assets/question.php'
     };
 
+<<<<<<< HEAD
+=======
+    const postData = async (url, data) => {
+        let res = await fetch(url, {
+            method: "POST",
+            body: data
+        });
+
+        return await res.text();
+    };
+
+>>>>>>> 313f07d9ccb3e88304d6187cd41e6f0442bb6962
     const clearInputs = () => {
         inputs.forEach(item => {
             item.value = '';
