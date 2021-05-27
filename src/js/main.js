@@ -2,6 +2,7 @@ import modals from './modules/modals';
 import sliders from './modules/sliders';
 import forms from './modules/forms';
 import mask from './modules/mask';
+import calc from './modules/calc';
 import showMoreStyles from './modules/showMoreStyles';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,4 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     forms();
     mask('[name="phone"');
     showMoreStyles('.button-styles', '#styles .row');
+    calc('#size', '#material', '#options', '.promocode', '.calc-price');
 });
