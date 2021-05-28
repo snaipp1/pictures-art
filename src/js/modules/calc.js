@@ -22,7 +22,7 @@ const calc = (size, material, options, promocode, result) => {
     sizeBlock.addEventListener('change', calcFunc);
     materialBlock.addEventListener('change', calcFunc);
     optionsBlock.addEventListener('change', calcFunc);
-    promocodeBlock.addEventListener('input', calcFunction);
+    promocodeBlock.addEventListener('input', calcFunc);
 };
 
 export default calc;
